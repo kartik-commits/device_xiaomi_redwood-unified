@@ -223,6 +223,9 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 # Inherit proprietary blobs
 include vendor/xiaomi/redwood/BoardConfigVendor.mk
 
+# Inherit Firmware
+include vendor/xiaomi/redwood-firmware/config.mk
+
 # Ignore build errors
 BUILD_BROKEN_DUP_RULES := true
 SELINUX_IGNORE_NEVERALLOWS := true
