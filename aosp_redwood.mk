@@ -11,14 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from redwood device
 $(call inherit-product, device/xiaomi/redwood/device.mk)
 
-# Inherit some common Ancient stuff.
-$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 PRODUCT_BRAND := POCO
 PRODUCT_DEVICE := redwood
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := POCO X5 Pro 5G
-PRODUCT_NAME := ancient_redwood
+PRODUCT_NAME := aosp_redwood
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
